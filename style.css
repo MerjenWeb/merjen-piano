@@ -1,7 +1,13 @@
+/* COLORS:#f45e4b; #32373d; #454c54; #eeeae9; #fff*/
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html {
+  font-size: 100%;
 }
 
 body {
@@ -21,7 +27,7 @@ body {
   height: 18rem;
   padding: 4rem 1rem 1rem 1rem;
   border-radius: 10px;
-  background-color: #74c0fc;
+  background-color: #f45e4b;
 }
 
 .piano {
@@ -42,17 +48,19 @@ body {
   align-items: flex-end;
   width: 3.42rem;
   padding-bottom: 0.5rem;
-  border: 1px solid #212529;
+  border: 1px solid #464c56;
   border-radius: 4px;
-  background-color: white;
-  color: #212529;
+  background-color: #fff;
+  color: #464c56;
+  transition: all 0.3s;
 }
 
 .white-key:hover,
 .white-key:active {
-  background: #efeeee;
+  background: #eeeae9;
   box-shadow: 1px 5px 15px 1px rgb(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .white-key p {
@@ -61,11 +69,12 @@ body {
   align-items: flex-end;
   height: 12.3rem;
   padding: 0.2rem;
+  transition: all 0.2s;
 }
 
 .white-key p:hover,
 .white-key p:active {
-  background: #efeeee;
+  background: #eeeae9;
   cursor: pointer;
 }
 
@@ -84,14 +93,67 @@ body {
   padding-bottom: 0.5rem;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  background: #343a40;
+  background: #454c54;
   color: #fff;
   font-size: 1rem;
+  transition: all 0.3s;
 }
 
 .black-key:hover,
 .black-key:active {
-  background: #17191c;
+  background: #32373d;
   box-shadow: 1px 5px 15px 1px rgb(0, 0, 0, 0.1);
   cursor: pointer;
+}
+
+@media (max-width: 50rem) {
+  html {
+    font-size: 87%;
+  }
+}
+
+@media (max-width: 44rem) {
+  html {
+    font-size: 74%;
+  }
+}
+
+@media (max-width: 37rem) {
+  html {
+    font-size: 64%;
+  }
+}
+
+@media (max-width: 32rem) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media (max-width: 28rem) {
+  html {
+    font-size: 44%;
+  }
+}
+
+@media (max-width: 22rem) {
+  html {
+    font-size: 34%;
+  }
+}
+
+@media (max-width: 17rem) {
+  html {
+    font-size: 24%;
+  }
+}
+
+@media (max-width: 12rem) {
+  html {
+    font-size: 40%;
+  }
+
+  .piano-container {
+    rotate: 90deg;
+  }
 }
