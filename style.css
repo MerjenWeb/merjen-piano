@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2rem;
+}
+
+.piano-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 50rem;
+  height: 18rem;
+  padding: 4rem 1rem 1rem 1rem;
+  border-radius: 10px;
+  background-color: #74c0fc;
+}
+
+.piano {
+  display: flex;
+  width: 48rem;
+  height: 13rem;
+}
+
+.piano-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.white-key {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 3.42rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid #212529;
+  border-radius: 4px;
+  background-color: white;
+  color: #212529;
+}
+
+.black-key-section {
+  position: absolute;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.black-key {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 1.71rem;
+  height: 8rem;
+  padding-bottom: 0.5rem;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: #343a40;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.black-key:hover,
+.black-key:active {
+  background: #17191c;
+  box-shadow: 1px 5px 15px 1px rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.white-key:hover,
+.white-key:active {
+  background: #efeeee;
+  box-shadow: 1px 5px 15px 1px rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+}
