@@ -1,11 +1,7 @@
 'use strict';
 const keys = document.querySelectorAll('.key');
 const playSound = function (key) {
-  // new Audio(`keys/${key}.mp3`).play();
-  const au = new Audio(
-    `https://github.com/MerjenWeb/merjen-piano/blob/main/keys/${key}.mp3`
-  ).play();
-  console.log(au);
+  new Audio(`keys/key-${key}.mp3`).play();
 };
 
 //CLICKING
