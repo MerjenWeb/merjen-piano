@@ -48,6 +48,27 @@ body {
   color: #212529;
 }
 
+.white-key:hover,
+.white-key:active {
+  background: #efeeee;
+  box-shadow: 1px 5px 15px 1px rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.white-key p {
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  height: 12.3rem;
+  padding: 0.2rem;
+}
+
+.white-key p:hover,
+.white-key p:active {
+  background: #efeeee;
+  cursor: pointer;
+}
+
 .black-key-section {
   position: absolute;
   display: flex;
@@ -71,13 +92,6 @@ body {
 .black-key:hover,
 .black-key:active {
   background: #17191c;
-  box-shadow: 1px 5px 15px 1px rgb(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-
-.white-key:hover,
-.white-key:active {
-  background: #efeeee;
   box-shadow: 1px 5px 15px 1px rgb(0, 0, 0, 0.1);
   cursor: pointer;
 }
